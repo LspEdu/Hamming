@@ -18,7 +18,8 @@
     if (count($adn1) != count($adn2)) {
         $error[] = "Error: Las cadenas tienen distinta longitud";
     } else {
-        for ($i = 0; $i <= count($adn1); $i++) {
+        for ($i = 0; $i < count($adn1); $i++) {
+
             if ($adn1[$i] != $adn2[$i]) {
                 $dif++;
             }
